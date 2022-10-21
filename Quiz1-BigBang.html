@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz 1 - Big Bang</title>
+        <script language="JavaScript">
+            function chk(){
+                var a1=document.getElementById("s1").value;
+                var a2=document.getElementById("s2").value;
+                var a3=document.getElementById("s3").value;
+                var a4=document.getElementById("s4").value;
+                var a5=document.getElementById("s5").value;
+                var score=0;
+                if(a1=='13.8 billion'){
+                    score+=1;
+                }
+                else{
+                    document.getElementById("w").innerHTML = "Wrong Questions"
+                    document.getElementById("1").innerHTML = "1. Your answer = "+a1+"<br>&emsp;&emsp;Correct answer = 13.8 billion years old"
+                }
+                if(a2=='Georges Lemaître'){
+                    score+=1;
+                }
+                else{
+                    document.getElementById("w").innerHTML = "Wrong Questions"
+                    document.getElementById("2").innerHTML = "2. Your answer = "+a2+"<br>&emsp;&emsp;Correct answer = Georges Lemaître"
+                }
+                if(a3=='False'){
+                    score+=1;
+                }
+                else{
+                    document.getElementById("w").innerHTML = "Wrong Questions"
+                    document.getElementById("3").innerHTML = "3. Your answer = "+a3+"<br>&emsp;&emsp;Correct answer = False"
+                }
+                if(a4=='False'){
+                    score+=1;
+                }
+                else{
+                    document.getElementById("w").innerHTML = "Wrong Questions"
+                    document.getElementById("4").innerHTML = "4. Your answer = "+a4+"<br>&emsp;&emsp;Correct answer = False"
+                }
+                if(a5=='True'){
+                    score+=1;
+                }
+                else{
+                    document.getElementById("w").innerHTML = "Wrong Questions"
+                    document.getElementById("5").innerHTML = "5. Your answer = "+a5+"<br>&emsp;&emsp;Correct answer = True"
+                }
+                document.getElementById("p").innerHTML = "You got "+score+" out of 5 points."
+            }
+        </script>
+    </head>
+    <body background="NightSky2.jpg" text="white">
+    <center><h1><font face="Cursive">Quiz 1 - The Big Bang 💥</font></h1></center>
+        <form>
+            <ol type="1">
+                <h2><u><font face="Arial Black">Choose the correct option:</font></u></h2><p/>
+                <big><li>
+                    <tt>How old is the Universe?</tt>&emsp;
+                    <select id="s1">
+                        <option value="103.2 billion years old">103.2 billion years old</option>
+                        <option value="1.7 trillion years old">1.7 trillion years old</option>
+                        <option value="13.8 billion years old">13.8 billion years old</option>
+                        <option value="15.6 billion years old">15.6 billion years old</option>
+                    </select>
+                </li></big><br>
+                <big><li>
+                    <tt>Who had the idea of the Big Bang?</tt>&emsp;
+                    <select id="s2">
+                        <option value="Edwin Hubble">Edwin Hubble</option>
+                        <option value="Georges Lemaître">Georges Lemaître</option>
+                        <option value="Galileo Galilei">Galileo Galilei</option>
+                        <option value="Aryabhata">Aryabhata</option>
+                    </select>
+                </li></big><br>
+                <h2><u><font face="Arial Black">True or False:</font></u></h2><p/>
+                <big><li>
+                    <tt>The Universe was very cold when it began.</tt>&emsp;
+                    <select id="s3">
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select>
+                </li></big><br>
+                <big><li>
+                    <tt>The Universe is shrinking.</tt>&emsp;
+                    <select id="s4">
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select>
+                </li></big><br>
+                <big><li>
+                    <tt>Stars, planets, comets, asteroids weren't there at the beginning.</tt>&emsp;
+                    <select id="s5">
+                        <option value="True">True</option>
+                        <option value="False">False</option>
+                    </select><br><br>
+                </li></big>
+            </ol>
+            <input type="button" value="Submit" onclick="chk()">
+        </form>
+        <big><p><tt id="p"></tt></p></big>
+        <center><h2><font face="Cursive" id="w"></font></h2></center>
+        <big><p><tt id="1"></tt></p></big>
+        <big><p><tt id="2"></tt></p></big>
+        <big><p><tt id="3"></tt></p></big>
+        <big><p><tt id="4"></tt></p></big>
+        <big><p><tt id="5"></tt></p></big>
+    </body>
+</html>
