@@ -1,0 +1,14 @@
+1) git add . (after making any changes)
+2) git commit -m "(put any message related to changes)"
+3) git push -u origin main
+
+
+Example: Situation - You created a new html file named "rubikscube.html"
+
+1) git add .
+2) git commit -m "Added rubik's htmls"
+3) git push -u origin main
+
+Steps to open the file in the internet: www.adrij.org/rubikscube.html
+
+
